@@ -2,7 +2,7 @@ material del curso de webflux udemy pragma: https://www.udemy.com/certificate/UC
 
 Seccion 8: WebClient: Consumiendo Servicios RESTful
 
-se adjunta la coleccion de postman al proyecto: webflux-apirest-v3.postman_collection
+se adjunta la coleccion de postman al proyecto: spring-boot-webflux-client.postman_collection.json
 
 api-client-listar: curl --location 'http://localhost:8090/api/client'
 
