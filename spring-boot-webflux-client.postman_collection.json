@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "5bcb60d4-9520-4e1c-b425-f58479d15aef",
+		"name": "spring-boot-webflux-client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3564773"
+	},
+	"item": [
+		{
+			"name": "api-client-listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api-client-ver",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/client/680bbca4a5f066639f14510f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"client",
+						"680bbca4a5f066639f14510f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api-client-upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/andres.jurado_pragma/Desktop/pngtree-led-tv-television-screen-vector-png-image_6673700.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/client/upload/680bbca4a5f066639f145114",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"client",
+						"upload",
+						"680bbca4a5f066639f145114"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api-client-crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Nokia 9011\",\r\n    \"precio\": 1000,\r\n    \"categoria\": {\r\n        \"id\": \"680bbca4a5f066639f145109\",\r\n        \"nombre\": \"Deporte\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api-client-editar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"Sony CS Camara HD Digital\",\r\n        \"precio\": 7800.89,\r\n        \"categoria\": {\r\n            \"id\": \"680bbca4a5f066639f145108\",\r\n            \"nombre\": \"Electronico\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/client/680bbca4a5f066639f14510d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"client",
+						"680bbca4a5f066639f14510d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api-client-eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/client/680bbca4a5f066639f14510d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"client",
+						"680bbca4a5f066639f14510d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
